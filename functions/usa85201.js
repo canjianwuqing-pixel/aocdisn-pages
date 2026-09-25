@@ -3,5 +3,9 @@ export async function onRequest({ request }) {
   url.protocol = "http:";
   url.hostname = "origin.undoab.men";
   url.port = "80";
-  return fetch(new Request(url.toString(), request));
+
+  const upstream = new Request(url.toString(), request);
+  upstream.headers.set("Host", "aocdisn.pages.dev");
+
+  return fetch(upstream);
 }
