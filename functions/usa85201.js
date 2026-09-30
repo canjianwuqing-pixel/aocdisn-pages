@@ -73,7 +73,8 @@ export async function onRequest(context) {
   const pair = new WebSocketPair();
   const client = pair[0];
   const server = pair[1];
-  server.accept();
+  server.binaryType = "arraybuffer";
+  server.accept({ allowHalfOpen: true });
 
   let writeChain = Promise.resolve();
   let closed = false;
