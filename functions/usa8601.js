@@ -1,7 +1,7 @@
 import { connect } from "cloudflare:sockets";
 
 const ORIGIN_HOST = "64.181.249.69";
-const ORIGIN_PORT = 40001;
+const ORIGIN_PORT = 32001;
 const WS_HOST = "aocdisn.pages.dev";
 
 const encoder = new TextEncoder();
