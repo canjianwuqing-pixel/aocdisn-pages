@@ -1,6 +1,6 @@
 import { connect } from "cloudflare:sockets";
 
-const ORIGIN_HOST = "usa01.undoab.men";
+const ORIGIN_HOST = "64.181.249.69";
 const ORIGIN_PORT = 4001;
 const WS_HOST = "aocdisn.pages.dev";
 
